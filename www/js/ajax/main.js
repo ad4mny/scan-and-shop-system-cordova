@@ -1,6 +1,7 @@
 $(document).ready(function () {
-
-    $('#user-id').html(uid);
+    if (uid != null) {
+        $('#user-id').html(uid);
+    }
 });
 
 $(document).on('click', '.scan-btn', function () {
