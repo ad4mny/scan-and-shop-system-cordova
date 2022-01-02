@@ -66,12 +66,22 @@ $(document).ready(function () {
                     '                <h4 class="fw-bold">RM ' + total_price.toFixed(2) + ' </h4>' +
                     '            </div>' +
                     '        </div>' +
-                    '<div class="row m-1 my-3 pb-5">' +
-                    '            <div class="col offset-md-10 text-center ">' +
-                    '                <button class="btn btn-primary btn-checkout" value="' + total_price.toFixed(2) + '">' +
-                    '                    <i class="fas fa-shopping-basket fa-fw fa-sm"></i>' +
-                    '                    Checkout' +
-                    '                </button>' +
+                    '       <div class="row m-1 my-3 g-2">' +
+                    '            <div class="col-6 ">' +
+                    '                   <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="return confirm(\'No online banking option yet.\');" checked>' +
+                    '                   <label class="btn btn-outline-primary" for="btnradio1"><i class="fas fa-credit-card fa-fw"></i> Online Banking</label>' +
+                    '            </div>' +
+                    '            <div class="col-6 ">' +
+                    '                   <input type="radio" class="btn-check btn-checkout" value="' + total_price.toFixed(2) + '" name="btnradio" id="btnradio2" autocomplete="off" onclick="return confirm(\'Show this cart to cahier to continue payment before clicking pay at counter.\');">' +
+                    '                   <label class="btn btn-outline-primary" for="btnradio2"><i class="fas fa-cash-register fa-fw"></i> Pay at Counter</label>' +
+                    '            </div>' +
+                    '        </div>' +
+                    '       <div class="row m-1 my-3 pb-5">' +
+                    '            <div class="col  text-center ">' +
+                    '                <a href="main.html" class="btn btn-outline-info">' +
+                    '                    <i class="fas fa-chevron-left fa-fw fa-sm"></i>' +
+                    '                    Continue Shopping' +
+                    '                </a>' +
                     '            </div>' +
                     '        </div>'
                 );

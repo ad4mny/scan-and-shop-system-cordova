@@ -80,7 +80,8 @@ $(document).on('click', '.btn-checkout', function () {
                 localStorage.removeItem('basket');
                 localStorage.removeItem('uid');
                 localStorage.setItem('uid', JSON.stringify(data));
-                location.replace("cart.html");
+                alert('Payment Success!');
+                location.reload();
             }
         }
     });
