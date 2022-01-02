@@ -21,7 +21,7 @@ $(document).ready(function () {
                 if (data.itemImg == null) {
                     img = '<img src="img/placeholder.png" class="img-fluid">';
                 } else {
-                    img = '<img src="' + url + data.itemImg + '" class="img-fluid">'
+                    img = '<img src="' + url + 'assets/items/' + data.itemImg + '" class="img-fluid">'
                 }
 
                 $('#display').append(
