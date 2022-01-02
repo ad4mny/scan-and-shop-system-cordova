@@ -4,7 +4,7 @@ var url = 'https://scan-and-shop-system.000webhostapp.com/';
 
 var logout = function () {
 
-    localStorage.clear();
+    localStorage.clear('token');
     location.replace('index.html');
 
 };
