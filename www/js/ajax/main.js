@@ -1,3 +1,8 @@
+$(document).ready(function () {
+
+    $('#user-id').html(uid);
+});
+
 $(document).on('click', '.scan-btn', function () {
 
     cordova.plugins.barcodeScanner.scan(
@@ -23,6 +28,7 @@ $(document).on('click', '.scan-btn', function () {
             orientation: "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
             disableAnimations: true, // iOS
             disableSuccessBeep: false // iOS and Android
-        });
+        }
+    );
 
 });
