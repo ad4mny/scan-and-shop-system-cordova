@@ -91,8 +91,7 @@ $(document).ready(function () {
             '        <div class="row my-3">' +
             '            <div class="col">' +
             '                <div class="p-4 bg-white rounded-3 shadow-sm text-dark">' +
-            '                    <p class="mb-0">Your have no active orders :(</p>' +
-            '                    <small> Order some meal now.</small>' +
+            '                    <p class="mb-0">Your have no items in your cart</p>' +
             '                </div>' +
             '            </div>' +
             '        </div>'

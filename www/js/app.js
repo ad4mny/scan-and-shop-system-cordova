@@ -63,7 +63,6 @@ $(document).on('click', '.btn-remove', function () {
 $(document).on('click', '.btn-checkout', function () {
 
     var totalPrice = this.value;
-    console.log(totalPrice);
 
     $.ajax({
         type: "POST",
